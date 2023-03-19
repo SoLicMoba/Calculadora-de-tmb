@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <title>Calculadora de Metabolismo Basal</title>
+</head>
+
+<body>
+  <div class="formulario"> 
+    <h1>Calculadora de Metabolismo Basal</h1>
+    <img src="./img/DALL_E_2023-03-16_21.57.16_-_calculator_happy_cute-removebg-preview.png" alt="" id="img-1">
+    <div class="container">
+    
+    <label for="genero">Sexo:</label>
+    <select name="genero" id="genero">
+      <option value="homem" selected>Homem</option>
+      <option value="mulher">Mulher</option>
+    </select>
+    
+    <label for="peso">Seu Peso:</label>
+    <input type="number" required  minlength="10" id="peso">
+    
+    <label for="altura">Sua Altura:</label>
+    <input type="number" required  minlength="110" maxlength="250" id="altura">
+    
+    <label for="idade">Sua Idade:</label>
+    <input type="number" minlength="1" maxlength="99" required id="idade">
+
+    <label>Atividade Física Diária:</label>
+    <select name="atividade-fisica" id="atividadeFisica">
+      <option value="primeiro" selected>Faço pouco esforço físico diariamente</option>
+      <option value="segundo">Faço esforço físico moderado diariamente</option>
+      <option value="terceiro">Faço esforço físico alto diariamente </option>
+      <option value="quarto">Faço esforço físico intenso todos os dias</option>
+    </select>
+
+    <a href="#revelar"><button class="calcular" onclick="calcular()">Calcular</button></a>
+    
+    </div>
+
+    
+
+    </div>
+
+  </div>
+  
+
+  <div class="revelar " id="revelar">
+
+    <div class="resultado">
+      <h2>Seu Resultado</h2>
+    </div>
+
+
+    <div class="graficos">
+      <div class="emagrecer">
+        <h3>Emagrecer</h3>
+        <img id="down" src="./img/up.svg" alt="emagrecer">
+        <h4>Calorias ingeridas por dia</h4>
+        <h2 class="caloriasIngeridasEmagrecer"></h2>
+        <p>Para que você perca de 0.5 a 1 kg por semana de maneira saudável</p>
+      </div>
+  
+      <div class="manterPeso">
+        <h3>Manter peso</h3>
+        <img id="normal" src="./img/normal.svg" alt="manter peso">
+        <h4>Calorias ingeridas por dia</h4>
+        <h2 class="caloriasIngeridasManterPeso"></h2>
+        <p>Para que você mantenha o seu peso atual.</p>
+      </div>
+  
+      <div class="ganharPeso">
+        <h3>Ganhar peso</h3>
+        <img id="up" src="./img/up.svg" alt="ganhar peso">
+        <h4>Calorias ingeridas por dia</h4>
+        <h2 class="caloriasIngeridasGanharPeso"></h2>
+        <p>Para que você ganhe de 0.5 a 1kg por semana de maneira saudável.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

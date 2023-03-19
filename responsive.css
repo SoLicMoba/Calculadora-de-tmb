@@ -1,0 +1,25 @@
+@media screen and (max-width: 800px) {
+    .graficos {
+        flex-flow: column;
+        
+    }
+
+    .emagrecer, .manterPeso, .ganharPeso {
+        min-width: 50vw;
+    }
+
+    .formulario {
+        min-width: 95%;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .calcular {
+        max-width: 70%;
+    }
+
+    select {
+        max-width: 70%;
+    }
+}

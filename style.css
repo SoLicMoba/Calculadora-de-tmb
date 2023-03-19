@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100vw;
+  flex-direction: column;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #7c4e87;
+  box-shadow: 0px 0px 10px rgba(217, 0, 255, 0.22);
+  padding: 20px 50px;
+  max-width: 50vw;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+label {
+  font-weight: 500;
+  
+}
+
+input {
+  padding: 5px;
+  border-radius: 10px;
+  outline: none;
+}
+
+label, input, select {
+  border: none;
+  margin-bottom: 5px;
+  
+}
+
+#genero {
+  padding: 5px;
+}
+
+select {
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+img {
+  width: 100px;
+}
+
+#img-1 {
+  top: 30px;
+  right: 30px;
+}
+
+#img-2 {
+  left: 30px;
+  bottom: 30px;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+#genero {
+  width: 165px;
+  text-align: center;
+}
+
+.resultado {
+  text-align: start;
+  width: 100%;
+  padding: 10px;
+}
+
+.calcular {
+  width: 100%;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 400;
+
+  background: #e8aef6;
+  transition: all 100ms linear;
+  cursor: pointer;
+}
+
+.calcular:hover {
+  background-color: #d48ee6;;
+}
+
+#atividadeFisica {
+  text-align: center;
+  padding: 5px;
+}
+
+
+/* Após o Calculo, aparecerá está parte */
+
+.resultado {
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+
+
+.graficos {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+}
+
+.graficos img {
+  width: 70px;
+  margin-top: 10px;
+}
+
+.emagrecer, .manterPeso, .ganharPeso {
+  color: black;
+  border: solid 2px #7c4e87;
+  border-radius: 10px;
+  transition: all 200ms linear;
+  padding: 10px;
+
+  max-width: 30vw;
+}
+
+#down {
+  transform: rotate(180deg);
+}
+
+.emagrecer:hover, .manterPeso:hover, .ganharPeso:hover {
+  background: #dcbce3;
+}
+
+
+
+.revelar h4 {
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
