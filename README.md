@@ -20,3 +20,5 @@ No futuro, pretendo implementar o projeto usando React e Styled Components para 
 
 ### Autor
  Richard Re'Code
+
+Link para testar o projeto: https://solicmoba.github.io/Calculadora-de-tmb/
