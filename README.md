@@ -19,4 +19,4 @@ Para utilizar o projeto, basta abrir o arquivo index.html em qualquer navegador 
 No futuro, pretendo implementar o projeto usando React e Styled Components para melhorar a experiência do usuário e tornar a interface mais agradável.
 
 ### Autor
-Seu nome ou apelido
+ Richard Re'Code
